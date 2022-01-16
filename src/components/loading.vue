@@ -117,13 +117,42 @@ export default {
 		
 	}
 
-	@media screen and (max-width:468px) {
+	@media screen and (max-width:320px) {
 		.wrapper{
 			
 			.wrapper__images{
 				padding: 0px 15px 0px 15px;
 				.row1, .row2{
 					max-width: 140px;
+				}
+
+				.row1{
+					margin-right: 10px;
+				}
+
+				.row2{
+					margin-right: 0px;
+					margin-left: 0px;
+					margin-left: 10px;
+				}
+
+				.row3{
+					display: none;
+					
+				}
+			}
+			
+		}
+	
+	}
+
+	@media screen and (min-width:320px) and (max-width:468px) {
+		.wrapper{
+			
+			.wrapper__images{
+				padding: 0px 15px 0px 15px;
+				.row1, .row2{
+					max-width: 160px;
 				}
 
 				.row1{
