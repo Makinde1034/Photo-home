@@ -5,7 +5,7 @@
 			<div v-for="(image,index) in allImages" :key="index" >
 				<div v-if="image.id === imageId">
 					<div class="image">
-						<img class="img1" :src="image.cover_photo.urls.regular" alt="">
+						<img class="img1" :src="image.cover_photo.urls.regular" alt="modal--image">
 					</div>
 					<div class="details">
 						<p class="details__name">{{image.cover_photo.user.name}}</p>
