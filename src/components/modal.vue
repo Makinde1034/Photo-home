@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<div :class=" isModalOpen ? [ 'overlay', 'overlay__active' ] : 'overlay' " @click="closeModal"></div>
+		<div :class=" isModalOpen ? [ 'overlay', 'overlay__active' ] : 'overlay' " @click="closeModal"><img class="close" src="../assets/close.png" alt=""></div>
 		<div :class=" isModalOpen ? [ 'modal', 'modal__active' ] : 'modal' ">
 			<div v-for="(image,index) in allImages" :key="index" >
 				<div v-if="image.id === imageId">
 					<div class="image">
-						<img :src="image.cover_photo.urls.regular" alt="">
+						<img class="img1" :src="image.cover_photo.urls.regular" alt="">
 					</div>
 					<div class="details">
 						<p class="details__name">{{image.cover_photo.user.name}}</p>
@@ -13,6 +13,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 </template>
@@ -50,6 +51,14 @@ export default {
 	opacity: 0;
 	transition: 0.5s ease;
 	z-index:999;
+	
+	.close{
+		height: 20px;
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		cursor: pointer;
+	}
 }
 
 .overlay__active{
@@ -81,7 +90,7 @@ export default {
 		align-items: center;
 		background: black;
 
-		img{
+		.img1{
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
@@ -90,6 +99,8 @@ export default {
 			// object-position: center;
 		}
 	}
+
+	
 
 	.details{
 		height: 100px;
@@ -116,6 +127,11 @@ export default {
 }
 
 @media screen and (max-width:468px) {
+	.overlay{
+		.close{
+			height: 16px;
+		}
+	}
 	.modal{
 		width: calc(100vw - 30px);
 		height: 400px;
