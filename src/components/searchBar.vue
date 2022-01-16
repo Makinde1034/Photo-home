@@ -49,6 +49,7 @@ export default {
 			border: none;
 			padding-left: 20px;
 			font-weight: 600;
+			border-radius: 3px;
 		}
 
 		img{
@@ -67,7 +68,6 @@ export default {
 			display: flex;
 			align-items: center;
 			background: white;height: 50px;
-			background:white;
 			border: none;
 			border-radius: 3px;
 			padding-left: 20px;

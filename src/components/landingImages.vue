@@ -145,6 +145,10 @@ export default {
             justify-content: center;
             row-gap: 10px;
             column-gap: 10px;
+
+            .wrap:hover{
+               transform: scale(1);
+            }
          }
       }
 		
