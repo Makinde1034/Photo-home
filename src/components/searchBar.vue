@@ -1,7 +1,7 @@
 <template>
 	<div class="search">
 		<div>
-			<form action="">
+			<form @submit.prevent="" action="">
 				<div class="search__wrap">
 					<img src="../assets/search.png" alt="">
 					<input v-on:input="searchCollection($event)" placeholder="Search for photo" type="text">
