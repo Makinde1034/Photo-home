@@ -44,7 +44,7 @@ export default {
 .overlay{
 	height: 100%;
 	width: 100%;
-	background: rgba(10, 10, 10, 0.5);
+	background: rgba(10, 10, 10, 0.7);
 	position: fixed;
 	top: 0px;
 	visibility:  hidden;
