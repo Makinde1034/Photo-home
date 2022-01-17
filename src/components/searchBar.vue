@@ -27,12 +27,12 @@ export default {
 
 		searchCollection(e){
 			if(e.target.value === ''){
-				this.getHomeImages("african")
+				// this.getHomeImages("african")
 				this.search = e.target.value
 			}else{
 				console.log(e.target.value)
 				this.search = e.target.value
-				this.getHomeImages(e.target.value)
+				this.getHomeImages(e.target.value) 
 			}
 			
 			
