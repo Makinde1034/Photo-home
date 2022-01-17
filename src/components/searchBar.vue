@@ -37,11 +37,17 @@ export default {
 			
 			
 		}
+	},
+	computed:{
+		
 	}
 }
 </script>
 
 <style lang="scss" scoped>
+
+	@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Ubuntu:wght@500&display=swap');
+
 	.search{
 		padding: 0px 300px 0px 300px;
 		width: 100%;
@@ -60,11 +66,11 @@ export default {
 		}
 
 		p{
-			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			font-family: 'Ubuntu', sans-serif;
 			font-size: 13px;
 			color: #2C3F5E;
 			font-weight: 700;
-			margin-top: 5px;
+			margin-top: 10px;
 		}
 
 		.search__wrap{

@@ -6,7 +6,11 @@ const imageModule = {
         return{
             homeImages : [],
             loading : false,
-            modalPropsId : ""
+            modalPropsId : "",
+            err : {
+                errMsg : "",
+                _err : null
+            }
         }
     },
     actions : {
@@ -21,7 +25,12 @@ const imageModule = {
                     commit("setImages",result)
                 }).catch((err)=>{
                     reject(err)
-                    commit("fetchImagesFailure",false)
+                    console.log(err.response)
+                    const payload={
+                        loading : false,
+                        errMsg : err.response.data
+                    }
+                    commit("fetchImagesFailure",payload)
                 })
             })
         },
@@ -38,6 +47,12 @@ const imageModule = {
         },
         fetchImagesSuccess(state,payload){
             state.loading = payload
+        },
+        fetchImagesFailure(state,payload){
+            state.loading = payload.loading
+            state.err.errMsg = payload.errMsg
+            state.err._err = true
+        
         },
         setModalPropsId(state,payload){
             state.modalPropsId = payload
