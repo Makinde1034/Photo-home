@@ -11,24 +11,7 @@
                </div>
             </div>  
          </div>
-         <!-- <div class="big__box"></div>
-         <div class="small__box"></div>
-         <div class="big__box"></div>
-         <div class="small__box"></div>
-         <div class="big__box"></div> -->
       </div>
-      <!-- <div  class="wrapper__images">
-         <div class="no__result" v-if="images.length === 0">No results found</div>
-         <div v-else class="wrap" v-for="(image,index) in images"   :key="index">
-            <div @click="openPhoto(image.id)">
-               <img :src="image.cover_photo.urls.thumb" :alt="image.cover_photo.alt_description || 'image' ">
-               <div class="name__location">
-                  <p class="name">{{image.cover_photo.user.name}}</p>
-                  <p class="location">{{image.cover_photo.user.location}}</p>
-               </div>
-            </div>    
-         </div>
-      </div> -->
    </div> 
 </template>
  
