@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+	
 	@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Ubuntu:wght@500&display=swap');
 
 	.search{
