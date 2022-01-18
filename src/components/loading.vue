@@ -8,6 +8,9 @@
 				<div class="row1__box2">
 					<LoadingAnimation />
 				</div>
+				<div class="row1__box2">
+					<LoadingAnimation />
+				</div>
 			</div>
 			<div class="row2">
 				<div class="row2__box1">
