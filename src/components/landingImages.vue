@@ -51,14 +51,14 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-   
+
    }
 
    @mixin gen {
       display:block;
       overflow: hidden;
       margin-bottom: 20px;
-      margin-right: 10px
+      // margin-right: 10px
    }
 
    .wrapper{
@@ -82,7 +82,7 @@ export default {
          width: 40%;
          position: relative;
          column-count: 3;
-
+         column-gap: 25px;
          
          
 
@@ -92,7 +92,7 @@ export default {
             @include gen;
             position: relative;
             cursor: pointer;
-            transition: 0.2s ease-in-out;
+            transition: 0.2s ease;
 
             img{
                border-radius: 5px;
@@ -133,6 +133,7 @@ export default {
          }
          .cover:hover{
             transform: scale(1.1);
+            z-index: 2000;
             
          } 
          
