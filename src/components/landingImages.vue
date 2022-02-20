@@ -133,7 +133,7 @@ export default {
          }
          .cover:hover{
             transform: scale(1.1);
-            z-index: 2000;
+            z-index: 800;
             
          } 
          
