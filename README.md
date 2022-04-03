@@ -11,4 +11,4 @@
 
 [Here is a link to the full description of the project](https://www.notion.so/cowrywise/Frontend-Engineer-Test-3a4aeb677c604ca9b41cdac102d2f974)
 
-[Here is a link to the task](https://cowry-test.netlify.app/)
+[Here is a link to the task](https://phtohome.netlify.app/)
